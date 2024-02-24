@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- CSS -->
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      margin-top: 10rem;
+    }
+
+    .progress-bar {
+      width: 40rem;
+      background-color: gray;
+      height: 1rem;
+    }
+
+    .progress {
+      background-color: orangered;
+      width: 0;
+      height: 100%;
+    }
+  </style>
+
+  <!-- HTML -->
+  <body>
+    <div class="progress-bar">
+      <div class="progress" data-percent="50"></div>
+    </div>
+  </body>
+
+  <!-- JavaScript -->
+  <script>
+    const progress = document.querySelector('.progress')
+
+    // const progressPercentage = progress.getAttribute('data-percent')
+    // can also be done using dataset. This is the advantage of defining with data
+
+    const progressPercentage = progress.dataset.percent
+
+    progress.style.width = `${progressPercentage}%`
+  </script>
+</html>

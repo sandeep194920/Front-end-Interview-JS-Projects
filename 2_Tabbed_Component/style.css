@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+button {
+  padding: 0.5rem;
+  width: 7rem;
+}
+
+.tab-component {
+  max-width: 50%;
+  background-color: lightblue;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: wheat;
+  padding: 1rem 0;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem;
+}
+
+.active-content {
+  display: block;
+}
+
+.active-btn {
+  background-color: black;
+  color: white;
+}
